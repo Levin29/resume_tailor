@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Resume Tailor",
-  description: "Upload a resume and job description to generate a customized resume",
+  title: "Levin Sekhar — Data Engineer",
+  description:
+    "Portfolio of Levin Sekhar, a Data Engineer specializing in cloud data platforms, ETL/ELT pipelines, and lakehouse architecture in healthcare and PBM.",
 };
 
 export default function RootLayout({
