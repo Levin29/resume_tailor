@@ -4,7 +4,7 @@ export const portfolio = {
   location: "Chennai, Tamil Nadu",
   tagline: "Cloud data platforms & pipeline engineering for healthcare and pharmacy benefit management.",
   bio:
-    "Data Engineer with 3+ years architecting and optimizing scalable ETL/ELT pipelines, cloud data platforms, and enterprise data validation frameworks within the healthcare and pharmacy benefit management (PBM) domain. AWS Certified Cloud Practitioner and Databricks Certified Associate Developer for Apache Spark 3.0, with hands-on expertise across Databricks, Snowflake, Delta Lake, and lakehouse architecture processing 200,000+ records/day. Experienced in observability (Splunk), secrets/credential security, Agile/Scrum delivery, and cross-functional stakeholder coordination.",
+    "Data Engineer with 3+ years architecting and optimizing scalable ETL/ELT pipelines, cloud data platforms, and enterprise data validation frameworks within the healthcare and pharmacy benefit management (PBM) domain. AWS Certified Cloud Practitioner and Databricks Certified Associate Developer for Apache Spark 3.0, with hands-on expertise across Databricks, Snowflake, Delta Lake, and lakehouse architecture processing 70M+ records annually. Proficient in Python, Scala, SQL, and PySpark for distributed data processing, delivered through CI/CD pipelines (Jenkins, Terraform, Git) that cut average job runtime by ~25%. Track record of leading regression-suite overhauls, load/performance testing, and data validation frameworks across Dev, QA, and pre-production environments. Experienced in observability (Splunk), secrets/credential security, Agile/Scrum delivery, and cross-functional stakeholder coordination.",
   avatar: "/profile.jpg",
 
   links: {
@@ -112,7 +112,7 @@ export const portfolio = {
         "Cut average job runtime by ~25% through cluster configuration tuning, driver/worker utilization monitoring, and load testing across national drug code (NDC) processing workflows.",
         "Led a full overhaul of the regression test suite — migrating execution from local to cloud-based Spark compute and refactoring it into a distributable, versioned Python library — cutting manual validation effort across 15+ downstream benefit and clinical-rules workflows.",
         "Established a unified Jenkins CI/CD pipeline across all branches and introduced serverless DDL automation, reducing manual operational overhead and standardizing deployments.",
-        "Built an ASCII-based data ingestion pipeline processing 200,000+ records/day, landing raw pharmacy/clinical data through Bronze-to-Silver medallion layers within the Databricks lakehouse architecture.",
+        "Built an ASCII-based data ingestion pipeline processing 70M+ records annually (200K+ daily), landing raw pharmacy/clinical data through Bronze-to-Silver medallion layers within the Databricks lakehouse architecture.",
         "Extended RDBMS-to-cloud lakehouse hydration (ETL/ELT) jobs and enhanced reference-data schemas — updating column mappings, classification attributes, and materialized/published views to keep consumption layers in sync with source changes.",
         "Applied data governance practices using Unity Catalog for centralized metadata management and access control across lakehouse tables, improving data discoverability and audit readiness.",
         "Strengthened security posture by replacing file-based credential storage with managed secrets and scoped access controls.",
@@ -143,6 +143,18 @@ export const portfolio = {
         "Migrated data processing workflows from on-premises Hadoop to a cloud-based Spark platform, validating functional parity across 6+ pipelines post-migration with zero accuracy regression.",
         "Built comprehensive test suites with 15+ unit tests covering core functions, improving pre-release defect detection.",
         "Implemented data transformation and standardization scripts across on-prem and cloud Spark platforms to meet federal healthcare transparency reporting requirements, delivering submission-ready outputs for government portals.",
+      ],
+    },
+    {
+      role: "Software Engineer",
+      company: "Archiot Digital Solutions Private Limited",
+      period: "Jun 2022 – Jul 2023",
+      description: "Business Applications & Microsoft 365",
+      highlights: [
+        "Developed and customized business applications using Microsoft PowerApps, SharePoint, and Power Automate, streamlining internal workflows across teams.",
+        "Administered the Microsoft 365 environment (Exchange, Intune, Azure AD) and built both canvas and model-driven PowerApps, including enhancements to existing applications.",
+        "Reviewed application designs, coordinated task progress with stakeholders and team leads, and tested/debugged applications prior to release.",
+        "Delivered ongoing production support and maintenance for deployed business solutions, translating business requirements into technical implementations.",
       ],
     },
   ],
