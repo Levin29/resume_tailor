@@ -4,14 +4,13 @@ export function Contact() {
   const { links, name } = portfolio;
 
   return (
-    <section id="contact" className="scroll-mt-20 border-t border-border bg-surface px-6 py-24 md:py-32">
+    <section id="contact" className="scroll-mt-20 border-t border-border bg-surface px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl text-center">
         <p className="text-sm font-medium text-accent">Contact</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
           Let&apos;s connect.
         </h2>
-
-        <p className="mx-auto -mt-6 mb-10 max-w-md text-muted">
+        <p className="mx-auto mt-4 mb-10 max-w-md text-muted">
           Open to new opportunities in data engineering and cloud data platforms.
         </p>
 
