@@ -7,7 +7,7 @@ import { Skills } from "@/components/portfolio/Skills";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-16 md:pb-24">
       <SiteHeader />
       <Hero />
       <About />

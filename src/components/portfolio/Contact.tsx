@@ -4,13 +4,14 @@ export function Contact() {
   const { links, name } = portfolio;
 
   return (
-    <section id="contact" className="scroll-mt-20 bg-accent px-6 py-20 text-white">
-      <div className="mx-auto max-w-4xl text-center">
-        <h2 className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">
-          Contact
+    <section id="contact" className="scroll-mt-20 border-t border-border bg-surface px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl text-center">
+        <p className="text-sm font-medium text-accent">Contact</p>
+        <h2 className="mt-2 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+          Let&apos;s connect.
         </h2>
-        <h3 className="mb-3 text-2xl font-bold tracking-tight">Let&apos;s connect</h3>
-        <p className="mx-auto mb-10 max-w-md text-sm leading-relaxed text-slate-300">
+
+        <p className="mx-auto -mt-6 mb-10 max-w-md text-muted">
           Open to new opportunities in data engineering and cloud data platforms.
         </p>
 
@@ -18,7 +19,7 @@ export function Contact() {
           {links.email && (
             <a
               href={`mailto:${links.email}`}
-              className="rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-accent transition-colors hover:bg-slate-100"
+              className="rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
             >
               {links.email}
             </a>
@@ -26,7 +27,7 @@ export function Contact() {
           {links.phone && (
             <a
               href={`tel:${links.phone.replace(/\s/g, "")}`}
-              className="rounded-lg border border-slate-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:border-slate-300"
+              className="rounded-full border border-border bg-card px-6 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-background"
             >
               {links.phone}
             </a>
@@ -36,16 +37,14 @@ export function Contact() {
               href={links.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-slate-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:border-slate-300"
+              className="rounded-full border border-border bg-card px-6 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-background"
             >
               LinkedIn
             </a>
           )}
         </div>
 
-        <p className="mt-16 text-xs text-slate-500">
-          © {new Date().getFullYear()} {name}
-        </p>
+        <p className="mt-20 text-xs text-muted">© {new Date().getFullYear()} {name}</p>
       </div>
     </section>
   );

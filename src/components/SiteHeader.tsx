@@ -10,22 +10,18 @@ const nav = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border/50 bg-white/90 backdrop-blur-lg">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-        <Link
-          href="/"
-          className="text-[15px] font-semibold tracking-tight text-foreground"
-        >
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl backdrop-saturate-150">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <Link href="/" className="text-[17px] font-semibold tracking-tight text-foreground">
           {portfolio.name.split(" ")[0]}
-          <span className="text-accent-light">.</span>
         </Link>
 
-        <nav className="flex items-center gap-1 sm:gap-2">
+        <nav className="flex items-center gap-1">
           {nav.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-1.5 text-[13px] font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
+              className="rounded-full px-3.5 py-1.5 text-[13px] font-medium text-muted transition-colors hover:text-foreground"
             >
               {item.label}
             </a>

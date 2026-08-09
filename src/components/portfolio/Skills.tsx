@@ -1,30 +1,26 @@
 import { portfolio } from "@/data/portfolio";
+import { SectionHeader } from "./SectionHeader";
 
 export function Skills() {
   return (
-    <section id="skills" className="scroll-mt-20 border-t border-border bg-white px-6 py-20">
-      <div className="mx-auto max-w-4xl">
-        <h2 className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-accent-light">
-          Skills
-        </h2>
-        <h3 className="mb-10 text-2xl font-bold tracking-tight text-foreground">
-          Technical expertise
-        </h3>
+    <section id="skills" className="scroll-mt-20 px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl">
+        <SectionHeader label="Skills" title="Tools and technologies." />
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {portfolio.skills.map((group) => (
             <div
               key={group.category}
-              className="rounded-xl border border-border bg-surface/30 p-5"
+              className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow)]"
             >
-              <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-foreground">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted">
                 {group.category}
-              </h4>
-              <div className="flex flex-wrap gap-1.5">
+              </h3>
+              <div className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-md bg-white px-2.5 py-1 text-xs text-muted ring-1 ring-border"
+                    className="rounded-full bg-surface px-3 py-1 text-xs text-foreground"
                   >
                     {skill}
                   </span>
